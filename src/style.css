@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+    /* Pill colors - depth levels */
+    --color-d1: #1f2937;  /* darkest - deepest layer */
+    --color-d2: #374151;
+    --color-d3: #4b5563;
+    --color-d4: #6b7280;
+    --color-d5: #9ca3af;
+    --color-d6: #d1d5db;
+    --color-d7: #e5e7eb;  /* lightest - top layer */
+}
+
+/* #23451e */
+
+.container {
+    @apply max-w-6xl mx-auto px-6 lg:px-8;
+}
+
+h1 {
+  @apply font-sans text-5xl text-d1 font-semibold mb-4 leading-tight;
+}
+
+h2 {
+  @apply font-sans text-3xl text-d1 font-semibold mb-4 leading-tight;
+}
+
+h3 {
+  @apply font-sans text-2xl text-d1 font-semibold mb-4 leading-snug;
+}
+
+.text_light{
+  @apply text-white;
+}
+
+h4 {
+  @apply font-sans text-xl text-d1 font-medium mb-4;
+}
+
+/* Body content wrapper */
+.content {
+  @apply font-sans leading-relaxed text-gray-700 mb-6 text-sm sm:text-base md:text-lg;
+}
+
+.content_lg {
+    @apply text-lg;
+}
+
+section {
+    @apply border-t border-gray-200 py-10;
+}
+
+.btn {
+    @apply inline-flex items-center px-6 py-3 bg-d2 text-white font-medium rounded-lg hover:outline-4 outline-d4;
+}
+
+.btn_light {
+    @apply border bg-white border-gray-300 text-gray-700 hover:text-gray-900 outline-d7;
+}
