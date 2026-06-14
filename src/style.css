@@ -51,7 +51,7 @@ section {
 }
 
 .btn {
-    @apply inline-flex items-center px-6 py-3 bg-d2 text-white font-medium rounded-lg hover:outline-4 outline-d4;
+    @apply inline-flex items-center px-6 py-3 bg-d2 text-white font-medium rounded-lg hover:outline-4 outline-d4 justify-center;
 }
 
 .btn_light {

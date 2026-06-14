@@ -13,5 +13,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.17"
   }
 }

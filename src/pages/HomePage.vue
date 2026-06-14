@@ -3,16 +3,16 @@
         <Header />
 
         <main class="flex-1">
-            <div class="container py-12">
-                <div class="flex gap-4 items-center ">
-                    <div class="w-2/5">
-                        <h1>
+            <div class="container py-8 md:py-12 px-4 sm:px-6">
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                    <div class="w-full lg:w-2/5 text-center lg:text-left">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
                             Welcome to <br> LindenCMS
                         </h1>
-                        <p class="content">
-                            This project is actively developed by a single developer It's stable for testing
+                        <p class="content mt-4 max-w-2xl lg:max-w-none mx-auto lg:mx-0">
+                            A modern, open‑source PHP CMS built to accelerate development.
                         </p>
-                        <div class="flex gap-4 mt-8">
+                        <div class="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
                             <a href="/docs/index.html" class="btn">
                                 Quick Start
                                 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
 
-                    <div class="w-3/5">
+                    <div class="w-full lg:w-3/5">
                         <CodeBlock :tabs="codeTabs" />
                     </div>
                 </div>
@@ -41,18 +41,14 @@
                     <div class="text-center mb-12">
                         <h2>Not just another CMS with static structure</h2>
                         <p class="content max-w-2xl mx-auto">
-                            LindenCMS gives you the development speed of a traditional CMS with the flexibility of fully custom code.
+                            LindenCMS gives you the development speed of a traditional CMS with the flexibility of fully
+                            custom code.
                             Designed to reduce development time while keeping your structure dynamic
                         </p>
                     </div>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <FeatureCard
-                            v-for="feature in features"
-                            :key="feature.title"
-                            :icon="feature.icon"
-                            :title="feature.title"
-                            :description="feature.description"
-                        />
+                        <FeatureCard v-for="feature in features" :key="feature.title" :icon="feature.icon"
+                            :title="feature.title" :description="feature.description" />
                     </div>
                 </div>
             </section>
@@ -61,12 +57,12 @@
                 <div class="container py-16 text-center">
                     <h2>We Need Your Feedback</h2>
                     <p class="content">
-                        This project is developed by a single developer. 
-                        It's stable for testing, but still a work in progress. 
+                        This project is developed by a single developer.
+                        It's stable for testing, but still a work in progress.
                         Feedback, bug reports, and contributions are welcome — they'll help shape the roadmap.
                         Try it out and help to build a better CMS.
                     </p>
-                    <div class="flex gap-4 justify-center">
+                    <div class="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
                         <a href="mailto:kolodochka.alesha@gmail.com?subject=LindenCMS%20Feedback" class="btn"
                             target="_blank">
                             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
