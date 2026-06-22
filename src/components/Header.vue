@@ -6,7 +6,7 @@
                 <!-- <span class="inline-block ml-2 px-2 py-0.5 bg-red-600 text-white text-sm rounded-full align-middle">BETA</span> -->
             </div>
             <nav class="space-x-6 flex items-center">
-                <a href="/docs" class="text-gray-600 hover:text-gray-900 transition">Docs</a>
+                <a href="docs/" class="text-gray-600 hover:text-gray-900 transition">Docs</a>
                 <a href="https://github.com/kolodochka-dev/lindencms" class="text-gray-600 hover:text-gray-900 transition" target="_blank">
                     <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"

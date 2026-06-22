@@ -5,7 +5,10 @@ import path from 'path'
 
 export default defineConfig({
     plugins: [vue(), tailwindcss()],
-    // base: '/lindencms-docs/'
+    base: '/lindencms/',
+    build: {
+        outDir: 'dist',
+    },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src'),
