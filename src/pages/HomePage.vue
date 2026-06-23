@@ -123,8 +123,8 @@ class Product extends AppNode
 
 class ProductPage extends Page
 {
-    #[Load(static fucntion (Product $node, Request $request) {
-        $node->refresh($request->route('id'))
+    #[Load(static fucntion (Product $product, Request $request) {
+        $product->refresh($request->route('id'))
     })]
     public Product $product;
 }
